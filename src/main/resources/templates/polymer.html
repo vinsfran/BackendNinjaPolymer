@@ -6,12 +6,33 @@
         <title>Backend Ninja - Polymer</title>
         <script src="" th:src="@{/bower_components/webcomponentsjs/webcomponents-lite.js}"/>
         <link rel="import" href="" th:href="@{/elements/hola-mundo.html}"/>
+        <link rel="import" href="" th:href="@{/bower_components/google-youtube/google-youtube.html}"/>
+        <link rel="import" href="" th:href="@{/bower_components/iron-form/iron-form.html}"/>
+        <link rel="import" href="" th:href="@{/bower_components/paper-checkbox/paper-checkbox.html}"/>
 
     </head>
 
     <body>
 
         <hola-mundo tu-nombre="Vicentew" apellido="Insfran"></hola-mundo>
+
+        <google-youtube
+            video-id="Oko_Tm6Ntok"
+            height="270px"
+            width="480px"
+            rel="0"
+            start="5"
+            autoplay="1">
+        </google-youtube>
+
+        <iron-form>
+            <form method="get" action="/form/handler">
+                <input type="text" name="name" value="Batman"/>
+                <input type="checkbox" name="donuts" unchecked=""/> I like donuts
+                <br/>
+                <paper-checkbox name="cheese" value="yes" unchecked=""></paper-checkbox>
+            </form>
+        </iron-form>
 
 
     </body>
