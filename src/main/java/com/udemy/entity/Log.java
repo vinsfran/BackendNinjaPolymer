@@ -9,7 +9,7 @@ import javax.persistence.Table;
 
 /**
  *
- * @author vinsfran
+ * @author vinsfran sgffdgdfgdsfg
  */
 @Entity
 @Table(name = "log")

@@ -11,7 +11,7 @@ import javax.persistence.Table;
 
 /**
  *
- * @author vinsfran
+ * @author vinsfran slkdflksdjflk
  */
 @Entity
 @Table(name = "users")
